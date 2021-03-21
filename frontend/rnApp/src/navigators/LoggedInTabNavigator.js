@@ -3,15 +3,17 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {
   createBottomTabNavigator,
+} from 'react-navigation-tabs';
+import {
   createStackNavigator,
-} from 'react-navigation';
+} from 'react-navigation-stack';
 import Icon from 'react-native-vector-icons/Ionicons';
 import ExploreContainer from '../containers/ExploreContainer';
 import InboxContainer from '../containers/InboxContainer';
 import ProfileContainer from '../containers/ProfileContainer';
 import SavedContainer from '../containers/SavedContainer';
 import TripsContainer from '../containers/TripsContainer';
-import CreateList from '../screens/CreateList';
+// import CreateList from '../screens/CreateList';
 import colors from '../styles/colors';
 
 const ExploreTab = createStackNavigator({
@@ -21,7 +23,7 @@ const ExploreTab = createStackNavigator({
       header: null,
     },
   },
-  CreateList: { screen: CreateList },
+  // CreateList: { screen: CreateList },
 },
 {
   mode: 'modal',

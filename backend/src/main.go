@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/bitly/go-simplejson"
-	"net/http"
-	//"github.com/bitly/go-simplejson"
 	"github.com/gorilla/mux"
+	"net/http"
 )
 
 type data struct {

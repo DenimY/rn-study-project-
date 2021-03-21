@@ -1,14 +1,13 @@
-import {
-    createStackNavigator,
-} from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack'
 import LoggedOut from '../screens/LoggedOut';
 import LogIn from '../screens/LogIn';
-import ForgotPassword from '../screens/ForgotPassword';
-import TurnOnNotifications from '../screens/TurnOnNotifications';
+import TestChat from '../screens/TestChat';
+// import ForgotPassword from '../screens/ForgotPassword';
+// import TurnOnNotifications from '../screens/TurnOnNotifications';
 import LoggedInTabNavigator from './LoggedInTabNavigator';
 
 const AppRouteConfigs = createStackNavigator({
-    // LoggedOut: {screen: LoggedOut},
+    LoggedOut: {screen: LoggedOut},
     LoggedIn: {
         screen: LoggedInTabNavigator,
         navigationOptions: {
@@ -17,8 +16,9 @@ const AppRouteConfigs = createStackNavigator({
         },
     },
     LogIn: {screen: LogIn},
-    // ForgotPassword: {screen: ForgotPassword},
-    // TurnOnNotifications: {screen: TurnOnNotifications},
+    TestChat: {screen: TestChat},
+    // ForgotPassword: {screen: LogIn},
+    // TurnOnNotifications: {screen: LogIn},
 });
 
 export default AppRouteConfigs;

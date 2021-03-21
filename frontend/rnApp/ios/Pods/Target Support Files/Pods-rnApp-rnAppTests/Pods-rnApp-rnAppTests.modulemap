@@ -1,0 +1,6 @@
+module Pods_rnApp_rnAppTests {
+  umbrella header "Pods-rnApp-rnAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
